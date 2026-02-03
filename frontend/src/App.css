@@ -1,0 +1,328 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background: url("/background.png");
+
+} */
+.landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+}
+
+.landingPageContainer nav {
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landingPageContainer nav h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.landingPageContainer nav .navlist {
+  display: flex;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+
+.landingMainContainer {
+  display: flex;
+  justify-content: space-around;
+  padding-inline: 3rem;
+  height: 80vh;
+  align-items: center;
+}
+
+.landingMainContainer>div:nth-child(1) {
+  font-size: 2rem;
+}
+
+.landingMainContainer>div:nth-child(1) div[role='button'] {
+  background: #D97500;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 15px;
+  margin-top: 1.2rem;
+}
+
+.landingMainContainer>div:nth-child(1) div[role='button'] a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+
+.landingMainContainer>div:nth-child(2) img {
+  height: 70vh;
+  width: auto;
+}
+
+/* .navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+
+} */
+
+/* ===== HOME PAGE (Navbar + Meet Layout) ===== */
+
+.navBar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  height: 64px;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: rgba(10, 10, 12, 0.85);
+  backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brandTitle {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.historyBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 6px 8px;
+}
+
+.historyBtn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.historyIcon {
+  color: #fff !important;
+}
+
+.navText {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.logoutBtn {
+  color: #fff !important;
+  text-transform: none !important;
+  font-weight: 700 !important;
+  border-radius: 10px !important;
+}
+
+.logoutBtn:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* ===== MAIN SECTION ===== */
+.meetContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 6vw;
+  min-height: calc(100vh - 64px);
+
+  padding: 30px 20px;
+  color: #fff;
+
+  background: radial-gradient(circle at top, #1b1b24 0%, #0b0b10 55%, #07070a 100%);
+}
+
+.leftPanel {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.leftPanelContent {
+  max-width: 560px;
+}
+
+.heroTitle {
+  margin: 0 0 18px 0;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.joinRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* ===== MUI TextField Look ===== */
+.meetingInput .MuiOutlinedInput-root {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  color: #fff;
+}
+
+.meetingInput .MuiInputLabel-root {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.meetingInput .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.meetingInput .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.meetingInput .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #4f8cff;
+}
+
+/* Remove Webkit Autofill Background */
+.meetingInput input:-webkit-autofill,
+.meetingInput input:-webkit-autofill:hover,
+.meetingInput input:-webkit-autofill:focus,
+.meetingInput input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff !important;
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px transparent !important;
+}
+
+/* ===== Join Button ===== */
+.joinBtn {
+  border-radius: 12px !important;
+  padding: 10px 18px !important;
+  font-weight: 800 !important;
+  text-transform: none !important;
+}
+
+/* ===== Right Panel Image ===== */
+.rightPanel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightPanel>img {
+  width: 32vw;
+  max-width: 460px;
+  min-width: 260px;
+  height: auto;
+
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.55);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .meetContainer {
+    flex-direction: column;
+    gap: 26px;
+    padding-top: 24px;
+  }
+
+  .heroTitle {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .leftPanelContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rightPanel>img {
+    width: 85vw;
+    min-width: unset;
+  }
+}
+
+
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+}
+
+
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel>img {
+  width: 30vw;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* .chattingArea {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.chattingArea input,
+.chattingArea .MuiTextField-root {
+  flex: 1;
+  min-width: 0;
+}
+
+.chattingArea button,
+.chattingArea .MuiButton-root {
+  height: 40px;
+  min-width: 80px;
+  font-weight: bold;
+  background: #1976d2;
+  color: #fff;
+  border-radius: 6px;
+} */
